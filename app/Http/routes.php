@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','LpiodataController@index');
+Route::get('/search','LpiodataController@search');
+
+
+Route::get('/graph_data','LpiodataController@graph');
+
