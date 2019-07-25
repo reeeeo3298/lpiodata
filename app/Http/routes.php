@@ -12,8 +12,8 @@
 */
 
 Route::get('/','LpiodataController@index');
-Route::get('/search','LpiodataController@search');
+Route::post('/lpiodata/search','LpiodataController@search');
 
 
-Route::get('/graph_data','LpiodataController@graph');
+Route::get('/lpiodata/graph_data','LpiodataController@graph');
 
